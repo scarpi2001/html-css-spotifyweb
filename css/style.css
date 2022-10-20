@@ -10,23 +10,25 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.grey-text {
-    color: rgb(127, 129, 134);
-}
-
 .white-text {
     color: white;
 }
 
+.grey-text {
+    color: rgb(127, 129, 134);
+}
+
+
+
 /* WRAPPER */
 #wrapper {
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; 
 }
 
 /* SEZIONE PRINCIPALE */
 #main {
     display: flex;
+    overflow: hidden;
     height: calc(100% - 80px);
 }
 
@@ -34,6 +36,7 @@ body {
 #main_side_bar {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     background-color: rgb(0, 0, 0);
     min-width: 200px;
     padding: 0 15px;
@@ -50,6 +53,44 @@ body {
 .mini-logo {
     display: none;
 }
+
+#main_side_bar ul {
+    list-style-type: none;
+}
+
+#main_side_bar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* side-bar nav */
+#side_bar_nav {
+    margin-bottom: 20px;
+}
+#side_bar_nav img {
+    max-width: 15%;
+    margin-right: 5px;
+}
+
+/* side-bar playlist */
+#add {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+#add_btn {
+    padding: 5px 8px;
+    margin-right: 10px;
+    background-color: rgb(163, 163, 163);
+    font-size: 20px;
+}
+
+#playlist_list {
+    overflow-y: auto;
+    height: 200px;
+}
+
 
 /* contenuto principale */
 #main_content {
@@ -129,6 +170,7 @@ body {
 /* xs version */
 @media screen and (max-width: 570px) {
 
+    /* side-bar */
     #main_side_bar {
         min-width: 60px;
         max-width: 60px;
@@ -145,6 +187,10 @@ body {
 
     .mini-logo {
         display: inline-block;
+    }
+
+    #side_bar_nav a {
+        display: none;
     }
 
     #main_content_top_bar {

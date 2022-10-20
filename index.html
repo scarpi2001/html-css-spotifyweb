@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
@@ -19,17 +19,57 @@
 
         <!-- SEZIONE PRINCIPALE -->
         <section id="main">
+
             <!-- side-bar -->
             <div id="main_side_bar">
                 <figure id="main_side_bar_logo">
                     <img class="logo" src="img/logo.svg" alt="Logo">
                     <img class="mini-logo" src="img/logo-small.svg" alt="Logo">
                 </figure>
-                <nav>
-                   <span><img src="img/home.svg" alt="">Home</span>
-                   <span><img src="img/search.svg" alt="">Cerca</span>
-                   <span><img src="img/libreria.svg" alt="">La tua libreria</span>
+                <!-- side-bar nav -->
+                <nav id="side_bar_nav">
+                    <ul>
+                        <li> 
+                            <img src="img/home.svg" alt="home">
+                            <a class="link white-text" href="#">Home</a>
+                        </li>
+                        <li>
+                            <img src="img/search.svg" alt="cerca">
+                            <a class="link grey-text" href="#">Cerca</a>
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt="libreria">
+                            <a class="link grey-text" href="#">La tua libreria</a>
+                        </li>
+                    </ul>
                 </nav>
+                <!-- side-bar playlist -->
+                <div id="side_bar_playlist">
+                    <h3 class="white-text">PLAYLIST</h3>
+                    <div id="add">
+                        <span id="add_btn"><i class="fa-solid fa-plus"></i></span>
+                        <span>
+                            <span class="grey-text"><h3>Crea Playlist</h3></span>
+                        </span>
+                    </div>
+                    <div id="playlist_list">
+                        <ul>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- side-bar download -->
+                <div>
+                    
+                </div>
             </div>
 
             <!-- contenuto principale -->
