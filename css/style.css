@@ -36,12 +36,14 @@ body {
 #main_side_bar {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0);
+    max-width: 200px;
     min-width: 200px;
     padding: 0 15px;
 }
 
+/* side-bar logo */
 #main_side_bar_logo {
     padding: 20px 0;
 }
@@ -68,6 +70,7 @@ body {
 #side_bar_nav {
     margin-bottom: 20px;
 }
+
 #side_bar_nav img {
     max-width: 15%;
     margin-right: 5px;
@@ -89,6 +92,36 @@ body {
 #playlist_list {
     overflow-y: auto;
     height: 200px;
+}
+
+/* side-bar download */
+#side_bar_download {
+    padding-bottom: 10px;
+}
+
+#download {
+    display: flex;
+    align-items: center;
+}
+
+#download img {
+    max-width: 10%;
+    margin-right: 5px;
+}
+
+#side_bar_download hr {
+    margin: 10px 0;
+}
+
+#avatar {
+    display: flex;
+}
+
+#avatar img {
+    width: 12%;
+    border-radius: 50px;
+    background-color: rgb(128, 128, 128);
+    margin-right: 5px;
 }
 
 
@@ -181,7 +214,10 @@ body {
         max-width: 100%;
     }
 
-    .logo {
+    .logo,
+    #side_bar_nav a,
+    #side_bar_playlist,
+    #side_bar_download {
         display: none;
     }
 
@@ -189,10 +225,7 @@ body {
         display: inline-block;
     }
 
-    #side_bar_nav a {
-        display: none;
-    }
-
+    /* contenuto principale */
     #main_content_top_bar {
         width: calc(100% - 60px);
     }
