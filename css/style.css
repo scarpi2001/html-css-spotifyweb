@@ -32,9 +32,15 @@ body {
 
 /* side-bar */
 #main_side_bar {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(0, 0, 0);
     min-width: 200px;
-    padding: 15px;
+    padding: 0 15px;
+}
+
+#main_side_bar_logo {
+    padding: 20px 0;
 }
 
 #main_side_bar_logo img {
@@ -45,7 +51,7 @@ body {
     display: none;
 }
 
-/* contenuto sezione principale */
+/* contenuto principale */
 #main_content {
     display: flex;
     flex-direction: column;
@@ -125,10 +131,11 @@ body {
 
     #main_side_bar {
         min-width: 60px;
+        max-width: 60px;
         text-align: center;
     }
 
-    #main_side_bar_logo img {
+    #main_side_bar img {
         max-width: 100%;
     }
 
