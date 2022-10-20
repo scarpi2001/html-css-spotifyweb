@@ -19,8 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 /* WRAPPER */
@@ -92,6 +91,8 @@ h1 {
 }
 
 #playlist_list {
+    height: 100%;
+    overflow: hidden;
     overflow-y: auto;
 }
 
@@ -100,7 +101,6 @@ h1 {
     display: flex;
     align-items: flex-end;
     padding-bottom: 10px;
-    height: 100%
 }
 
 #download {
@@ -137,10 +137,7 @@ h1 {
     padding: 15px;
     overflow-y: auto;
     height: 100%;
-    /* position: relative; */
     background-color: rgb(20, 25, 34);
-     /* DEBUG */
-    /* height: calc(100% - 90px); */
 }
 
 /* top-bar */
@@ -177,7 +174,6 @@ h1 {
 #main_content_mid_nav {
     text-align: center;
     margin-top: 90px;
-    margin-bottom: 35px;
 }
 
 #main_content_mid_nav li {
@@ -188,14 +184,20 @@ h1 {
 }
 
 /* ascoltati di recente */
+#main_content > h1 {
+    margin: 20px 0;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* blocco ascoltati di recente */
 .container_block {
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -206,6 +208,18 @@ h1 {
 .container_block h3 {
     margin: 10px 0;
 }
+
+/* creato per te */
+#title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#title h1 {
+    margin-bottom: 10px;
+}
+
+
 
 /* BOTTOM BAR */
 #bottom_bar {
@@ -225,7 +239,7 @@ h1 {
 
 }
 
-/*  */
+/* md breakpoint */
 @media screen and (max-width: 1000px) {
 
     .container_block {
@@ -234,7 +248,17 @@ h1 {
     
 }
 
-/* xs version */
+
+/* s breakpoint */
+@media screen and (max-width: 770px) {
+
+    .container_block {
+        width: calc(50% - 10px)
+    }
+    
+}
+
+/* xs breakpoint */
 @media screen and (max-width: 570px) {
 
     /* side-bar */
@@ -251,6 +275,7 @@ h1 {
     .logo,
     #side_bar_nav a,
     #side_bar_playlist,
+    #playlist_list,
     #side_bar_download {
         display: none;
     }
