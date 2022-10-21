@@ -44,6 +44,10 @@ h1 {
     padding: 0 15px;
 }
 
+.link:hover {
+    color: white;
+}
+
 /* side-bar logo */
 #main_side_bar_logo {
     padding: 20px 0;
@@ -88,6 +92,15 @@ h1 {
     margin-right: 10px;
     background-color: rgb(163, 163, 163);
     font-size: 20px;
+}
+
+#add:hover #add_btn {
+    background-color: white;
+    cursor: pointer;
+}
+
+#add:hover .create {
+    color: white;
 }
 
 #playlist_list {
@@ -165,8 +178,10 @@ h1 {
     transition: all 0.5s;
 }
 
-.btn:hover {
+.btn:hover,
+.icons.big:hover {
     scale: 1.2;
+    cursor: pointer;
 }
 
 /* parte centrale */
@@ -287,6 +302,11 @@ h1 {
     margin: 0 20px;
 }
 
+.icons:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #bottom_bar_player {
     width: 40%;
 }
@@ -315,6 +335,25 @@ h1 {
     width: 30%;
     height: 5px;
     border-radius: 10px;
+    position: relative;
+}
+
+.progressive_bar_inside i {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+
+.progressive_bar_inside:hover {
+    background-color: limegreen;
+    cursor: pointer;
+}
+
+.progressive_bar_inside:hover .progressive_bar_inside i {
+    display: block;
 }
 
 
