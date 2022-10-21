@@ -254,8 +254,8 @@ h1 {
     justify-content: space-between;
     height: 80px;
     background-color: rgb(40, 40, 40);
-    padding: 0 10px;
-    
+    color: white;
+    padding: 20px 10px; 
 }
 
 .bottom_bar_aside {
@@ -270,17 +270,51 @@ h1 {
     margin-right: 10px;
 }
 
-.icons {
-    color: rgb(120, 120, 120);
-    margin-left: auto;
+.icons_box {
+    margin-left: 30px;
 }
 
-.icons i {
+.icons {
     margin-right: 10px;
+}
+
+.icons.medium {
+    font-size: 18px;
+}
+
+.icons.big {
+    font-size: 28px;
+    margin: 0 20px;
 }
 
 #bottom_bar_player {
     width: 40%;
+}
+
+#commands {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#progressive_bar_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressive_bar {
+    width: 80%;
+    height: 5px;
+    background-color: rgb(120, 120, 120);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.progressive_bar_inside {
+    background-color: white;
+    width: 30%;
+    height: 5px;
+    border-radius: 10px;
 }
 
 
@@ -300,10 +334,6 @@ h1 {
 
     .container_block {
         width: calc(25% - 10px);
-    }
-
-    .icons {
-        margin-left: 10px;
     }
 
 }
@@ -347,5 +377,14 @@ h1 {
     /* contenuto principale */
     #main_content_top_bar {
         width: calc(100% - 60px);
+    }
+
+    /* bottom bar */
+    .bottom_bar_aside {
+        display: none;
+    }
+
+    #bottom_bar_player {
+        width: 100%;
     }
 }
