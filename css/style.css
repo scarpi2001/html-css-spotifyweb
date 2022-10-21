@@ -131,8 +131,6 @@ h1 {
 
 /* Contenuto principale */
 #main_content {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
     padding: 15px;
     overflow-y: auto;
@@ -227,6 +225,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .container_block h3 {
@@ -252,8 +251,36 @@ h1 {
 /* BOTTOM BAR */
 #bottom_bar {
     display: flex;
+    justify-content: space-between;
     height: 80px;
     background-color: rgb(40, 40, 40);
+    padding: 0 10px;
+    
+}
+
+.bottom_bar_aside {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    font-size: 14px;
+}
+
+.bottom_bar_aside img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.icons {
+    color: rgb(120, 120, 120);
+    margin-left: auto;
+}
+
+.icons i {
+    margin-right: 10px;
+}
+
+#bottom_bar_player {
+    width: 40%;
 }
 
 
@@ -272,7 +299,11 @@ h1 {
 @media screen and (max-width: 1300px) {
 
     .container_block {
-        width: calc(100% / 4 - 10px);
+        width: calc(25% - 10px);
+    }
+
+    .icons {
+        margin-left: 10px;
     }
 
 }
