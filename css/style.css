@@ -87,6 +87,7 @@ h1 {
     align-items: center;
     margin: 15px 0;
 }
+
 #add_btn {
     padding: 5px 8px;
     margin-right: 10px;
@@ -196,7 +197,7 @@ h1 {
 }
 
 /* Ascoltati di recente */
-#main_content > h1 {
+#main_content>h1 {
     margin: 20px 0;
 }
 
@@ -210,7 +211,7 @@ h1 {
 .container_block {
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
-    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -220,6 +221,7 @@ h1 {
 }
 
 .block_img img {
+    min-width: 100%;
     max-width: 100%;
     display: block;
 }
@@ -268,7 +270,7 @@ h1 {
     height: 80px;
     background-color: rgb(40, 40, 40);
     color: white;
-    padding: 20px 10px; 
+    padding: 20px 10px;
 }
 
 .bottom_bar_aside {
@@ -380,7 +382,7 @@ h1 {
 @media screen and (max-width: 970px) {
 
     .container_block {
-        width: calc(50% - 10px)
+        width: calc(50% - 10px);
     }
 
 }
@@ -424,4 +426,13 @@ h1 {
     #bottom_bar_player {
         width: 100%;
     }
+}
+
+/* xxs breakpoint */
+@media screen and (max-width: 300px) {
+
+    .container_block {
+        width: 100%;
+    }
+
 }
